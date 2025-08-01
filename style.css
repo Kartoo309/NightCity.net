@@ -1,0 +1,207 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Zastąp czcionką podobną do tej z obrazka */
+    background-color: #0d0d0d; /* Bardzo ciemne tło */
+    color: #00ff00; /* Neonowy zielony kolor tekstu, jak na obrazku */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    overflow: hidden; /* Ukryj ewentualne paski przewijania */
+}
+
+.container {
+    background-color: #1a1a1a; /* Nieco jaśniejsze tło dla głównego kontenera */
+    border: 1px solid #00ff00; /* Ramka w kolorze neonowym */
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5); /* Lekki blask */
+    padding: 20px;
+    margin-top: 40px;
+    width: 90%;
+    max-width: 1200px; /* Maksymalna szerokość, dostosuj */
+    box-sizing: border-box;
+}
+
+.header {
+    margin-bottom: 20px;
+}
+
+.top-nav {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.nav-button {
+    background-color: #2a2a2a;
+    border: 1px solid #00ff00;
+    color: #00ff00;
+    padding: 10px 20px;
+    margin-right: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+}
+
+.nav-button.active {
+    background-color: #00ff00;
+    color: #1a1a1a;
+}
+
+.nav-button:not(.active):hover {
+    background-color: #003300;
+}
+
+.home-button {
+    background-color: #2a2a2a;
+    border: 1px solid #00ff00;
+    color: #00ff00;
+    padding: 10px 20px;
+    margin-right: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+}
+
+.home-button:hover {
+    background-color: #003300;
+}
+
+.address-bar {
+    background-color: #2a2a2a;
+    border: 1px solid #00ff00;
+    padding: 8px 15px;
+    display: flex;
+    align-items: center;
+    font-size: 0.9em;
+}
+
+.address-bar i {
+    margin-right: 8px;
+    color: #00ff00;
+}
+
+.address-bar .separator {
+    margin: 0 5px;
+    color: #00ff00;
+}
+
+.address-bar .path {
+    font-weight: bold;
+    color: #00ff00;
+}
+
+.address-bar .powered-by {
+    margin-left: auto;
+    font-size: 0.8em;
+    color: #00ff00;
+    text-transform: uppercase;
+}
+
+.main-content {
+    display: flex;
+}
+
+.sidebar {
+    width: 180px; /* Dostosuj szerokość paska bocznego */
+    border-right: 1px solid #00ff00;
+    padding-right: 15px;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.sidebar-item {
+    background-color: #2a2a2a;
+    border: 1px solid #00ff00;
+    color: #00ff00;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebar-item i {
+    margin-right: 10px;
+}
+
+.sidebar-item.active {
+    background-color: #00ff00;
+    color: #1a1a1a;
+}
+
+.sidebar-item:not(.active):hover {
+    background-color: #003300;
+}
+
+.app-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Dostosuj rozmiar ikon i liczbę kolumn */
+    gap: 20px; /* Odstępy między ikonami */
+    flex-grow: 1;
+}
+
+.app-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #2a2a2a;
+    border: 1px solid #00ff00;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-decoration: none;
+    color: inherit;
+    min-height: 0;
+}
+
+.app-icon:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.7);
+}
+
+.app-icon img {
+    max-width: 80px; /* Dostosuj rozmiar obrazków ikon */
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 5px;
+    filter: brightness(1.5) saturate(1.5) hue-rotate(90deg); /* Próba nadania neonowego wyglądu obrazkom, może wymagać dostosowania */
+}
+
+.app-icon span {
+    font-size: 0.8em;
+    color: #00ff00;
+    text-transform: uppercase;
+}
+
+/* Dostosowanie do mniejszych ekranów, jeśli potrzebne */
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+    }
+    .sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #00ff00;
+        padding-right: 0;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .app-grid {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
+}
+
+.scrollable-content {
+  /*height: 1000px;*/ /* Określ wysokość, aby zawartość mogła się przepełnić */
+  flex-grow: 1;
+  width: 500px; /* Ustaw szerokość (opcjonalnie) */
+  border: 1px solid #ccc; /* Dodaj ramkę, aby lepiej było widać element */
+  padding: 15px; /* Dodaj dopełnienie */
+  overflow-y: auto; /* Dodaj przewijanie pionowe tylko wtedy, gdy jest potrzebne */
+}
