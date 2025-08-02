@@ -37,7 +37,7 @@
 					</div>
 					<div class="tt-bookmark">
 						<div class="tt-bookmark-label">
-							<span>USŁUGI MEDYCZNE</span>
+							<span>BADANIA URAZOWE</span>
 						</div>
 					</div>
 					<section class="tt-section">
@@ -103,63 +103,289 @@
 					</section>
 					<section class="tt-section">
 						<div class="tt-section-header">
-							<h2>Klasyfikacja Obrażeń</h2>
+							<h2>Krytyczne Obrażenia</h2>
 							<p>
-								W miarę otrzymywania obrażeń Postaci przekraczają progi Klasyfikacji Obrażeń, ostatecznie doznając obrażeń, które negatywnie wpływają na skuteczność Postaci. Każda nowa Klasyfikacja Obrażeń zastępuje poprzedni Efekt Zranienia Klasyfikacji Obrażeń.
+								Za każdym razem, gdy podczas rzutu na obrażenia od Ataku Wręcz lub Ataku Dystansowego na dwóch lub wiecej kostek wypadnie 6 - Postać zadaje Obrażenia Krytyczne. Obrażenia Krytyczne wywołują Urazy.
 							</p>
-							<p class="tt-section-subtitle">
-								Klasyfikacja Obrażeń postaci określana jest na podstawie pozostałych HP.
+							<p>
+								<b>Rzucaj 2d6 do momentu uzyskania Urazu, którego Postać aktualnie nie doznaje. </b>W zależności, czy Postać celowała w ciało lub w głowę, odczytaj wynik z odpowiedniej Tabeli Urazów.
 							</p>
 						</div>
 
 						<div class="tt-section-table-container">
-							<table>
+							<table >
 								<thead>
 									<tr>
-										<th class="header-cell">Klasyfikacja Obrażeń</th>
-										<th class="header-cell">Próg</th>
-										<th class="header-cell">Efekty Zranienia</th>
-										<th class="header-cell">DV<br>Stabilizacji</th>
+										<th class="header-cell">Rzut<br>(2d6)</th>
+										<th class="header-cell">Uraz Ciała</th>
+										<th class="header-cell">Efekty Urazu</th>
+										<th class="header-cell">Szybki<br>Opatrunek</th>
+										<th class="header-cell">Leczenie</th>
 									</tr>
 								</thead>
 								<tbody>
 									<tr>
-										<td class="main-cell">
-											<div>Lekkie<br>Obrażenia</div>
-										</td>
-										<td class="secondary-cell">Mniej niż Pełne HP</td>
-										<td class="secondary-cell">Brak</td>
-										<td class="secondary-cell">DV10</td>
-									</tr>
-									<tr>
-										<td class="main-cell">
-											<div>Poważne<br>Obrażenia</div>
-										</td>
-										<td class="secondary-cell">Mniej niż 1/2 HP<br>(zaokrąglone w górę)</td>
-										<td class="secondary-cell">-2 do wszystkich Akcji</td>
-										<td class="secondary-cell">DV13</td>
-									</tr>
-									<tr>
-										<td class="main-cell">
-											<div>Śmiertelne<br>Obrażenia</div>
-										</td>
-										<td class="secondary-cell">Mniej niż 1 HP</td>
 										<td class="secondary-cell">
-											<p>Musi wykonać <b>Death Save</b> na początku każdej tury.</p>
-											<p>Śmiertelnie ranne postaci otrzymują <b>Krytyczne Obrażenia</b> za każdym razem, gdy zostaną zranione Atakiem Wręcz lub Atakiem Dystansowym. Dodatkowo ich <b>Death Save Penalty</b> wzrasta o 1.</p>
+											<div>2</div>
 										</td>
-										<td class="secondary-cell">
-											<p>DV15, aby przywrócić 1 HP i stracić przytomność na 1 minutę</p>
-										</td>
+										<td class="secondary-cell">Utrata ręki</td>
+										<td class="secondary-cell">Postać traci rękę. Każdy trzymany w tej ręce przedmiot upada na ziemię.<b>Bazowe Death Save Penalty wzrasta o 1.</b></td>
+										<td class="secondary-cell">---</td>
+										<td class="secondary-cell">Chirurgia DV17</td>
 									</tr>
 									<tr>
-										<td class="main-cell">Śmierć</td>
-										<td class="secondary-cell">Jeden nieudany Death Save</td>
-										<td class="secondary-cell">Śmierć</td>
-										<td class="secondary-cell">Już nie wróci</td>
+										<td class="secondary-cell">
+											<div>3</div>
+										</td>
+										<td class="secondary-cell">Utrata dłoni</td>
+										<td class="secondary-cell">Postać traci dłoń. Każdy trzymany w tej dłoni przedmiot upada na ziemię.<b>Bazowe Death Save Penalty wzrasta o 1.</b></td>
+										<td class="secondary-cell">---</td>
+										<td class="secondary-cell">Chirurgia DV17</td>
+									</tr>
+									<tr>
+										<td class="secondary-cell">
+											<div>4</div>
+										</td>
+										<td class="secondary-cell">Zapadnięcie płuca</td>
+										<td class="secondary-cell">-2 do MOVE (minimum 1). <b>Bazowe Death Save Penalty wzrasta o 1.</b></td>
+										<td class="secondary-cell">Ratownik DV15</td>
+										<td class="secondary-cell">Chirurgia DV15</td>
+									</tr>
+									<tr>
+										<td class="secondary-cell">
+											<div>5</div>
+										</td>
+										<td class="secondary-cell">Połamanie żeber</td>
+										<td class="secondary-cell">Jeżeli podczas tury Postać pokona pieszo więcej niż 4m odległości, ponownie otrzymuje dodatkowe obrażenia z Urazów.</td>
+										<td class="secondary-cell">Ratownik DV13</td>
+										<td class="secondary-cell">Ratownik DV15 lub Chirurgia DV13</td>
+									</tr>
+									<tr>
+										<td class="secondary-cell">
+											<div>6</div>
+										</td>
+										<td class="secondary-cell">Złamanie ręki</td>
+										<td class="secondary-cell">Postać nie może używać złamanej ręki. Każdy trzymany w tej ręce przedmiot upada na ziemię.</td>
+										<td class="secondary-cell">Ratownik DV13</td>
+										<td class="secondary-cell">Ratownik DV15 lub Chirurgia DV13</td>
+									</tr>
+									<tr>
+										<td class="secondary-cell">
+											<div>7</div>
+										</td>
+										<td class="secondary-cell">Ciało obce</td>
+										<td class="secondary-cell">Jeżeli podczas tury Postać pokona pieszo więcej niż 4m odległości, ponownie otrzymuje dodatkowe obrażenia z Urazów.</td>
+										<td class="secondary-cell">Pierwsza pomoc DV13 lub Ratownik DV13</td>
+										<td class="secondary-cell">Szybki Opatrunek całkowicie usuwa Efekt</td>
+									</tr>
+									<tr>
+										<td class="secondary-cell">
+											<div>8</div>
+										</td>
+										<td class="secondary-cell">Złamanie nogi</td>
+										<td class="secondary-cell">-4 do MOVE (minimum 1).</td>
+										<td class="secondary-cell">Ratownik DV13</td>
+										<td class="secondary-cell">Ratownik DV15 lub Chirurgia DV13</td>
+									</tr>
+									<tr>
+										<td class="secondary-cell">
+											<div>9</div>
+										</td>
+										<td class="secondary-cell">Zerwanie mięśnia</td>
+										<td class="secondary-cell">-2 do Ataków Wręcz.</td>
+										<td class="secondary-cell">Pierwsza pomoc DV13 lub Ratownik DV13</td>
+										<td class="secondary-cell">Szybki Opatrunek całkowicie usuwa Efekt</td>
+									</tr>
+									<tr>
+										<td class="secondary-cell">
+											<div>10</div>
+										</td>
+										<td class="secondary-cell">Uraz kręgosłupa</td>
+										<td class="secondary-cell">W następnej turze Postać nie może wykonać akcji poza ruchem. <b>Bazowe Death Save Penalty wzrasta o 1.</b></td>
+										<td class="secondary-cell">Ratownik DV15</td>
+										<td class="secondary-cell">Chirurgia DV15</td>
+									</tr>
+									<tr>
+										<td class="secondary-cell">
+											<div>11</div>
+										</td>
+										<td class="secondary-cell">Zmiażdżenie palców</td>
+										<td class="secondary-cell">-4 do każdej Akcji z użyciem tej dłoni.</td>
+										<td class="secondary-cell">Ratownik DV13</td>
+										<td class="secondary-cell">Chirurgia DV15</td>
+									</tr>
+									<tr>
+										<td class="secondary-cell">
+											<div>12</div>
+										</td>
+										<td class="secondary-cell">Utrata nogi</td>
+										<td class="secondary-cell">Postać traci nogę. -6 do MOVE (minimum 1). Postać nie może robić uników. <b>Bazowe Death Save Penalty wzrasta o 1.</b></td>
+										<td class="secondary-cell">---</td>
+										<td class="secondary-cell">Chirurgia DV17</td>
 									</tr>
 								</tbody>
 							</table>
+						</div>
+
+						<div class="tt-section-table-container">
+							<table >
+								<thead>
+									<tr>
+										<th class="header-cell">Rzut<br>(2d6)</th>
+										<th class="header-cell">Uraz Głowy</th>
+										<th class="header-cell">Efekty Urazu</th>
+										<th class="header-cell">Szybki<br>Opatrunek</th>
+										<th class="header-cell">Leczenie</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="secondary-cell">
+											<div>2</div>
+										</td>
+										<td class="secondary-cell">Utrata Oka</td>
+										<td class="secondary-cell">Postać traci Oko. -4 do Ataków Dystansowych i Perception Checks z użyciem wzroku.<b>Bazowe Death Save Penalty wzrasta o 1.</b></td>
+										<td class="secondary-cell">---</td>
+										<td class="secondary-cell">Chirurgia DV17</td>
+									</tr>
+									<tr>
+										<td class="secondary-cell">
+											<div>3</div>
+										</td>
+										<td class="secondary-cell">Uraz mózgu</td>
+										<td class="secondary-cell">-2 do wszystkich Akcji. <b>Bazowe Death Save Penalty wzrasta o 1.</b></td>
+										<td class="secondary-cell">---</td>
+										<td class="secondary-cell">Chirurgia DV17</td>
+									</tr>
+									<tr>
+										<td class="secondary-cell">
+											<div>4</div>
+										</td>
+										<td class="secondary-cell">Uszkodzenie oka</td>
+										<td class="secondary-cell">-2 do Ataków Dystansowych i Perception Checks z użyciem wzroku. <b>Bazowe Death Save Penalty wzrasta o 1.</b></td>
+										<td class="secondary-cell">Ratownik DV15</td>
+										<td class="secondary-cell">Chirurgia DV13</td>
+									</tr>
+									<tr>
+										<td class="secondary-cell">
+											<div>5</div>
+										</td>
+										<td class="secondary-cell">Utrata przytomności</td>
+										<td class="secondary-cell">-2 do wszystkich Akcji.</td>
+										<td class="secondary-cell">Pierwsza pomoc DV13 lub Ratownik DV13</td>
+										<td class="secondary-cell">Szybki Opatrunek całkowicie usuwa Efekt</td>
+									</tr>
+									<tr>
+										<td class="secondary-cell">
+											<div>6</div>
+										</td>
+										<td class="secondary-cell">Złamanie szczęki</td>
+										<td class="secondary-cell">-4 do wszystkich akcji z użyciem mowy.</td>
+										<td class="secondary-cell">Ratownik DV13</td>
+										<td class="secondary-cell">Ratownik DV13 lub Chirurgia DV13</td>
+									</tr>
+									<tr>
+										<td class="secondary-cell">
+											<div>7</div>
+										</td>
+										<td class="secondary-cell">Ciało obce</td>
+										<td class="secondary-cell">Jeżeli podczas tury Postać pokona pieszo więcej niż 4m odległości, ponownie otrzymuje dodatkowe obrażenia z Urazów.</td>
+										<td class="secondary-cell">Pierwsza pomoc DV13 lub Ratownik DV13</td>
+										<td class="secondary-cell">Szybki Opatrunek całkowicie usuwa Efekt</td>
+									</tr>
+									<tr>
+										<td class="secondary-cell">
+											<div>8</div>
+										</td>
+										<td class="secondary-cell">Uraz szyji</td>
+										<td class="secondary-cell"><b>Bazowe Death Save Penalty wzrasta o 1.</b></td>
+										<td class="secondary-cell">Ratownik DV13</td>
+										<td class="secondary-cell">Ratownik DV13 lub Chirurgia DV13</td>
+									</tr>
+									<tr>
+										<td class="secondary-cell">
+											<div>9</div>
+										</td>
+										<td class="secondary-cell">Rozbicie czaszki</td>
+										<td class="secondary-cell">Strzały skierowane w głowę postaci zwiększają obrażenia 3-krotnie, a nie 2-krotnie.<b>Bazowe Death Save Penalty wzrasta o 1.</b></td>
+										<td class="secondary-cell">Ratownik DV15</td>
+										<td class="secondary-cell">Ratownik DV15 lub Chirurgia DV15</td>
+									</tr>
+									<tr>
+										<td class="secondary-cell">
+											<div>10</div>
+										</td>
+										<td class="secondary-cell">Uszkodzenie ucha</td>
+										<td class="secondary-cell">Jeżeli podczas tury Postać pokona pieszo więcej niż 4m odległości, w następnej turze nie może się ruszać. -2 do Perception Checks z użyciem słuchu.</td>
+										<td class="secondary-cell">Ratownik DV13</td>
+										<td class="secondary-cell">Chirurgia DV13</td>
+									</tr>
+									<tr>
+										<td class="secondary-cell">
+											<div>11</div>
+										</td>
+										<td class="secondary-cell">Zmiażdżenie tchawicy</td>
+										<td class="secondary-cell">Postać nie może mówić. <b>Bazowe Death Save Penalty wzrasta o 1.</b></td>
+										<td class="secondary-cell">---</td>
+										<td class="secondary-cell">Chirurgia DV15</td>
+									</tr>
+									<tr>
+										<td class="secondary-cell">
+											<div>12</div>
+										</td>
+										<td class="secondary-cell">Utrata ucha</td>
+										<td class="secondary-cell">Postać traci ucho. Jeżeli podczas tury Postać pokona pieszo więcej niż 4m odległości, w następnej turze nie może się ruszać. -4 do Perception Checks z użyciem słuchu. <b>Bazowe Death Save Penalty wzrasta o 1.</b></td>
+										<td class="secondary-cell">---</td>
+										<td class="secondary-cell">Chirurgia DV17</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="tt-section-header">
+							<p class="tt-section-subtitle">
+								Śmiertelne Obrażenia
+							</p>
+							<p>
+								Postacie śmiertelnie ranne doznają obrażeń krytycznych za każdym razem, gdy zostaną zranione w wyniku ataku. Dodatkowo ich kara do rzutu obronnego przed śmiercią wzrasta o 1.
+							</p>
+						</div>
+					</section>
+					<section class="tt-section">
+						<div class="tt-section-header">
+							<h2>Death Saves</h2>
+							<p>
+								<b>Na początku każdej tury, w której Postać jest śmiertelnie ranny, musisz wykonać Death Save. </b>Rzuć d10. Jeśli wyrzucisz mniej niż BODY, żyjesz i możesz normalnie wykonać swoją turę. <b>Jeżeli wyrzucisz 10, Postać automatycznie ponosi porażkę.</b> Po każdym udanym Death Save, rośnie Death Save Penalty, to znaczy każdy kolejny Death Save jest trudniejszy o +1. Death Save Penalty wzrasta do momentu, aż stan Postaci zostanie ustabilizowany na poziomie 1HP. Po ustabilizowaniu stanu Postaci Death Save Penalty resetuje się.
+							</p>
+						</div>
+						<div class="notes-box">
+							<p>
+								Jeżeli podczas wykonywania rzucu na Death Save Postać odniesie porażkę, umiera.
+							</p>
+							<p>
+								I stamtąd już nie ma powrotu.
+							</p>
+						</div>
+
+						
+					</section>
+					<div class="tt-bookmark">
+						<div class="tt-bookmark-label">
+							<span>USŁUGI MEDYCZNE</span>
+						</div>
+					</div>
+					<section class="tt-section">
+						<div class="notes-box">
+							<p>
+								DV Stabilizacji celu zależy od jego Klasyfikacji Obrażeń:
+							</p>
+							<p class="notes-list">
+								<b>Lekkie Obrażenia: </b>DV10<br>
+								<b>Poważne Obrażenia: </b>DV13<br>
+								<b>Śmiertelne Obrażenia: </b>DV15
+							</p>
+							<p>
+								Stabilizacja to Akcja i wymaga rzutu: <b>TECH + Pierwsza Pomoc</b>/<b>Ratownik + 1d10.</b>
+							</p>
 						</div>
 					</section>
 					<div class="tt-bookmark">

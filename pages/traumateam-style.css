@@ -89,7 +89,7 @@ body {
 table {
     width: 100%;
     border-collapse: collapse;
-    table-layout: fixed; /* Dzieli tabelę równo */
+    table-layout: auto; 
 }
 
 th, td {
@@ -141,4 +141,26 @@ th {
 /* Dodatkowe style, które mogą być potrzebne do dopasowania */
 b {
     font-weight: bold;
+}
+
+/* ---- Styl dla bloku notatek ---- */
+
+.notes-box {
+    background-color: #ffffff;
+    color: #333;
+    border: 3px solid #ff0000; /* Czerwona, gruba ramka */
+    padding: 20px 30px;
+    margin: 40px auto; /* Centruje blok na stronie i dodaje marginesy */
+    max-width: 600px; /* Ogranicza maksymalną szerokość, aby tekst nie był zbyt rozciągnięty */
+    text-align: center;
+}
+
+.notes-box p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0 0 20px 0;
+}
+
+.notes-box p:last-child {
+    margin-bottom: 0; /* Usuwa dolny margines z ostatniego paragrafu */
 }
