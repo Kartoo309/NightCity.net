@@ -1,0 +1,253 @@
+:root {
+    --main-bg-color: #F7F7F7;
+    --panel-bg-color: #F7F7F7;
+    --text-color: #ffffff;
+    --highlight-color: #D84838;
+}
+
+body {
+    font-family: 'Arial', sans-serif; 
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+}
+
+.subpage-container {
+    display: flex;
+    flex-direction: column; 
+    width: 100%;
+    height: 77vh;
+    background-color: var(--panel-bg-color);
+}
+
+.tt-bookmark {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    background-color: var(--main-bg-color);
+    border-top: 2px solid var(--highlight-color);;
+}
+
+.tt-bookmark-label {
+    background-color: var(--highlight-color);
+    color: var(--main-bg-color);
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* ---- Sekcja Stanów Obrażeń (Wound States) ---- */
+
+.tt-section {
+    padding: 40px;
+    background-color: #f7f7f7; /* Jasne tło dla tej sekcji */
+    color: #333; /* Ciemny tekst */
+    font-family: 'Arial', sans-serif;
+}
+
+.tt-section-header h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--highlight-color); /* Kolor z akcentu */
+    padding-left: 20px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.tt-section-header h2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    background-color: var(--highlight-color);
+}
+
+.tt-section-header p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.tt-section-subtitle {
+    font-style: italic;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.tt-section-table-container {
+    margin-top: 40px;
+    overflow-x: auto; /* Przewijanie na małych ekranach */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: auto; 
+}
+
+th, td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+    vertical-align: top; /* Wyrównanie do góry */
+}
+
+thead tr {
+    background-color: var(--highlight-color);
+    color: #fff;
+    font-weight: bold;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #eee; /* Jasne tło dla co drugiej linii */
+}
+
+tbody tr:nth-child(even) {
+    background-color: #fff; /* Białe tło dla co drugiej linii */
+}
+
+/* Dostosowanie nagłówków do kształtu z obrazka */
+th {
+    position: relative;
+    padding: 15px 5px; /* Mniejszy padding dla nagłówków */
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+/* Wyróżnienie komórek nagłówkowych */
+.header-cell {
+    background-color: var(--highlight-color);
+}
+
+/* Style dla poszczególnych komórek */
+.main-cell {
+    font-weight: bold;
+    text-align: left;
+    background-color: #f0f0f0; /* Tło komórek z nazwami stanów */
+}
+
+.secondary-cell p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Dodatkowe style, które mogą być potrzebne do dopasowania */
+b {
+    font-weight: bold;
+}
+
+/* ---- Styl dla bloku notatek ---- */
+
+.notes-box {
+    background-color: #ffffff;
+    color: #333;
+    border: 3px solid #ff0000; /* Czerwona, gruba ramka */
+    padding: 20px 30px;
+    margin: 40px auto; /* Centruje blok na stronie i dodaje marginesy */
+    max-width: 600px; /* Ogranicza maksymalną szerokość, aby tekst nie był zbyt rozciągnięty */
+    text-align: center;
+}
+
+.notes-box p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0 0 20px 0;
+}
+
+.notes-box p:last-child {
+    margin-bottom: 0; /* Usuwa dolny margines z ostatniego paragrafu */
+}
+
+/* ---- Styl dla kart produktu ---- */
+.product-card-container {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.product-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 30px;
+    width: 320px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 455px;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
+}
+
+.product-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.product-price {
+    margin-bottom: 20px;
+}
+
+.product-price .price {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+}
+
+.product-price .tax-info {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+}
+
+.product-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
+
+.security-info {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 12px;
+    color: #666;
+}
+
+.buy-button {
+    background-color: var(--highlight-color);
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+    border-radius: 20px;
+    padding: 10px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.buy-button:hover {
+    background-color: var(--text-color);
+    color: var(--highlight-color);
+    border: 1px solid var(--highlight-color);
+}
+
+/* ---- Styl dla obrazów ---- */
+.obraz {
+    max-width: 100%;
+}
