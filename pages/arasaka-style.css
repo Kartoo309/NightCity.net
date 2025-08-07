@@ -1,8 +1,8 @@
 :root {
-    --main-bg-color: #F7F7F7;
-    --panel-bg-color: #F7F7F7;
+    --main-bg-color: #47120c;
+    --panel-bg-color: #0D0D0D;
     --text-color: #ffffff;
-    --highlight-color: #D84838;
+    --highlight-color: #47120c;
 }
 
 body {
