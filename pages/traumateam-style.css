@@ -1,8 +1,12 @@
 :root {
-    --main-bg-color: #F7F7F7;
-    --panel-bg-color: #F7F7F7;
+    --main-bg-color: #f7f7f7;
+    --panel-bg-color: #f7f7f7;
     --text-color: #ffffff;
+    --panel-text-color: #333333;
     --highlight-color: #D84838;
+
+    --table-bg-colorD: #eeeeee;
+    --table-bg-colorL: #ffffff;
 }
 
 body {
@@ -25,7 +29,7 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-top: 20px;
-    background-color: var(--main-bg-color);
+    background-color: var(--panel-bg-color);
     border-top: 2px solid var(--highlight-color);;
 }
 
@@ -38,19 +42,46 @@ body {
     text-transform: uppercase;
 }
 
-/* ---- Sekcja Stanów Obrażeń (Wound States) ---- */
+/* ---- Sekcja główna ---- */
+
+.tt-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: var(--main-bg-color);
+}
+
+.tt-header-left, .tt-header-right {
+    display: flex;
+    align-items: center;
+    background-color: var(--main-bg-color);
+}
+
+.tt-header-left {
+    gap: 15px;
+}
+
+.tt-header-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.tt-header-info span {
+    opacity: 0.7;
+}
 
 .tt-section {
     padding: 40px;
-    background-color: #f7f7f7; /* Jasne tło dla tej sekcji */
-    color: #333; /* Ciemny tekst */
+    background-color: var(--panel-bg-color);
+    color: var(--panel-text-color);
     font-family: 'Arial', sans-serif;
 }
 
 .tt-section-header h2 {
     font-size: 32px;
     font-weight: bold;
-    color: var(--highlight-color); /* Kolor z akcentu */
+    color: var(--highlight-color);
     padding-left: 20px;
     position: relative;
     text-transform: uppercase;
@@ -81,6 +112,8 @@ body {
     font-weight: bold;
 }
 
+/* ---- Tabela ---- */
+
 .tt-section-table-container {
     margin-top: 40px;
     overflow-x: auto; /* Przewijanie na małych ekranach */
@@ -101,19 +134,18 @@ th, td {
 
 thead tr {
     background-color: var(--highlight-color);
-    color: #fff;
+    color: var(--main-bg-color);
     font-weight: bold;
 }
 
 tbody tr:nth-child(odd) {
-    background-color: #eee; /* Jasne tło dla co drugiej linii */
+    background-color: var(--table-bg-colorD);
 }
 
 tbody tr:nth-child(even) {
-    background-color: #fff; /* Białe tło dla co drugiej linii */
+    background-color: var(--table-bg-colorL);
 }
 
-/* Dostosowanie nagłówków do kształtu z obrazka */
 th {
     position: relative;
     padding: 15px 5px; /* Mniejszy padding dla nagłówków */
@@ -121,16 +153,14 @@ th {
     font-size: 14px;
 }
 
-/* Wyróżnienie komórek nagłówkowych */
 .header-cell {
     background-color: var(--highlight-color);
 }
 
-/* Style dla poszczególnych komórek */
 .main-cell {
     font-weight: bold;
     text-align: left;
-    background-color: #f0f0f0; /* Tło komórek z nazwami stanów */
+    background-color: var(--table-bg-colorD);
 }
 
 .secondary-cell p {
@@ -138,7 +168,6 @@ th {
     padding: 0;
 }
 
-/* Dodatkowe style, które mogą być potrzebne do dopasowania */
 b {
     font-weight: bold;
 }
@@ -146,12 +175,12 @@ b {
 /* ---- Styl dla bloku notatek ---- */
 
 .notes-box {
-    background-color: #ffffff;
-    color: #333;
-    border: 3px solid #ff0000; /* Czerwona, gruba ramka */
+    background-color: var(--table-bg-colorL);
+    color: var(--panel-text-color);
+    border: 3px solid var(--highlight-color);  
     padding: 20px 30px;
-    margin: 40px auto; /* Centruje blok na stronie i dodaje marginesy */
-    max-width: 600px; /* Ogranicza maksymalną szerokość, aby tekst nie był zbyt rozciągnięty */
+    margin: 40px auto; 
+    max-width: 600px;
     text-align: center;
 }
 
@@ -162,7 +191,7 @@ b {
 }
 
 .notes-box p:last-child {
-    margin-bottom: 0; /* Usuwa dolny margines z ostatniego paragrafu */
+    margin-bottom: 0; 
 }
 
 /* ---- Styl dla kart produktu ---- */

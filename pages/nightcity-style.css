@@ -20,6 +20,26 @@ body {
     background-color: var(--panel-bg-color);
 }
 
+.nc-bookmark {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    background-color: var(--panel-bg-color);
+    border-top: 2px solid var(--highlight-color);;
+}
+
+.nc-bookmark-label {
+    background-color: var(--highlight-color);
+    color: var(--main-bg-color);
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* ---- Sekcja główna ---- */
+
 .nc-header {
     display: flex;
     justify-content: space-between;
@@ -58,46 +78,12 @@ body {
     align-items: flex-end;
     gap: 5px;
 }
-
-.official-guide, .city-of-dreams {
-    opacity: 0.7;
-    text-transform: uppercase;
-}
-
-.official-guide, {
-    font-size: 10px;
-}
-
-.city-of-dreams {
-    font-weight: bold;
-}
-
-.nc-logo {
-    margin-top: 5px;
-}
 /* ----------------------------------------------------------------- */
 .nc-body {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0px 40px;
-}
-
-.nc-bookmark {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-    border-top: 2px solid var(--highlight-color);;
-}
-
-.nc-bookmark-label {
-    background-color: var(--highlight-color);
-    color: var(--main-bg-color);
-    padding: 5px 15px;
-    display: inline-block;
-    font-weight: bold;
-    text-transform: uppercase;
 }
 
 .nc-body-head-title {
@@ -219,3 +205,22 @@ body {
 .lvl_3{background-color: #F7C102}
 .lvl_4{background-color: #FF0000}
 .lvl_5{background-color: #000000}
+
+/** ---- Dodatki ---- **/
+
+.official-guide, .city-of-dreams {
+    opacity: 0.7;
+    text-transform: uppercase;
+}
+
+.official-guide, {
+    font-size: 10px;
+}
+
+.city-of-dreams {
+    font-weight: bold;
+}
+
+.nc-logo {
+    margin-top: 5px;
+}
