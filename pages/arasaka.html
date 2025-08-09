@@ -133,7 +133,7 @@
 								<b>> Podłącz/odłącz się z sieci</b> 
 							</p>
 							<p>
-								Postać może wejść i wyjść bezpiecznie z sieci pod warunkiem, że znajduje się nie dalej niż 6m od punktu dostępu. Jeżeli pomiędzy Postacią, a punktem dostępu znajduje się ściana, akcja zazwyczaj jest niemożliwa. Jeżeli Postać opuści sieć bez odłączenia się, dozna efektów ataku każdego spotkanego i nieuśpionego BLACK ICE. Odłączenie się z sieci resetuje ją do stanu sprzed podłączenia.
+								Postać może wejść i wyjść bezpiecznie z sieci pod warunkiem, że znajduje się nie dalej niż 6m od punktu dostępu. Jeżeli pomiędzy Postacią, a punktem dostępu znajduje się ściana, akcja zazwyczaj jest niemożliwa. Jeżeli Postać opuści sieć bez odłączenia się, dozna efektów ataku każdego spotkanego i nieuśpionego BLACK-ICE. Odłączenie się z sieci resetuje ją do stanu sprzed podłączenia.
 							</p>
 							<p>
 								<b>> Użyj Interfejsu</b> 
@@ -206,36 +206,499 @@
 										<td class="main-cell">
 											<div>Eye-Dee</div>
 										</td>
-										<td class="secondary-cell">2</td>
+										<td class="secondary-cell">Pozwala zidentyfikować, czym jest znaleziony fragment danych (np. plik) i jaka jest jego wartość. Niektóre pliki mają DV, który należy przełamać, aby dowiedzieć się z niego czegokolwiek. Zużywa Akcję sieciową.</td>
 									</tr>
 									<tr>
 										<td class="main-cell">
 											<div>Pathfinder</div>
 										</td>
-										<td class="secondary-cell">2</td>
+										<td class="secondary-cell">Pozwala na odsłonięcie części planu sieci w zależności od rzutu. Ograniczone jest przeszkodami, których DV jest większe niż rzut. Zużywa Akcję sieciową.</td>
 									</tr>
 									<tr>
 										<td class="main-cell">
 											<div>Slide</div>
 										</td>
-										<td class="secondary-cell">2</td>
+										<td class="secondary-cell">Pozwala na próbę ucieczki z walki przeciwko jednemu BLACK-ICE, który nie jest Demonem. Rzut vs. Percepcja Programu + 1d10. Po udanej ucieczce BLACK-ICE pozostaje obudzony. Można użyć raz na turę. Zużywa Akcję sieciową.</td>
 									</tr>
 									<tr>
 										<td class="main-cell">
 											<div>Virus</div>
 										</td>
-										<td class="secondary-cell">2</td>
+										<td class="secondary-cell">Po dotarciu do najniższego poziomu sieci pozwala na pozostawienie wirusa, któy może przeprowadzić do 2 Akcji/zmian, w granicach rozsądku. <b>Zostawienie wirusa to jedyny sposób, w jaki można dokonać zmiany w sieci, która pozostanie w niej po odłączeniu się Netrunnera.</b> Gracz musi opisać jego działanie wirusa GM'owi. <b>W zależności od poziomu skomplikowania wirusa GM podaje DV i koszt Akcji Sieciowej.</b> Jeżeli koszt wynosi 9 AS, a Netrunner posiada tylko 3, musi spędzić trzy tury podkładając wirusa. Rzut determinuje DV pozbycia się wirusa.</td>
 									</tr>
 									<tr>
 										<td class="main-cell">
 											<div>Zap</div>
 										</td>
-										<td class="secondary-cell">2</td>
+										<td class="secondary-cell">Pozwala na zaatakowanie Programu lub wrogiego Netrunnera. Rzut vs DEF Programu + 1d10 lub Rzut vs. Interfejs Netrunnera + 1d10. Udany atak zadaje 1d6 dmg bezpośredniego. Zużywa Akcję sieciową.</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="ar-section-header">
+							<h2>Walka sieciowa</h2>
+							<p>
+								 
+							</p>
+							<p>
+								 <b></b> 
+							</p>
+						</div>
+						<div class="notes-box">
+							<p>
+								<b>Poziom Interfejsu + Program ATK + 1d10 </b>lub <b>BLACK-ICE ATK + 1d10</b>
+							</p>
+							<p>
+								vs.
+							</p>
+							<p>
+								<b>Poziom Interfejsu Celu + 1d10 </b>lub <b>Program DEF / BLACK-ICE DEF + 1d10</b>
+							</p>
+							<p>
+								Przy trafieniu, cel odczuwa Efekt Programu
+							</p>
+						</div>
+						<div class="ar-section-header">
+							<p>
+								Program, którego klasa wskazuje typ celu, jest efektywny tylko przy użyciu go przeciwko takiemu celowi.<b></b> 
+							</p>
+							<p>
+								Program, może zostać uśpiony, kiedy jego punkty REZ spadną do 0 (REZ == HP Programu). Program nie zostaje zniszczony i nadal działa, ale jego funkcje zostały tak bardzo ograniczone, że stał się bezużyteczny. Po restarcie (2 Akcje sieciowe) Program wraca do pełnego REZ. Programy Ofensywne aktywują się przy ataku i deaktywują zaraz po nim. Jest to proces automatyczny.<b></b> 
+							</p>
+							<p>
+								Programy, które zostaną zniszczone są usuwane z pamięci i nie można ich zrestartować. By odzyskać dany Program należy go kupić.<b></b> 
+							</p>
+							<h2>Programy</h2>
+							<p>
+								Programy to narzędzia pozwalające Netrunnerowi na walkę, ochronę i przemierzanie cyfrowego świata. Aktywacja i deaktywacja Programu kosztuje Akcję Sieciową. <b>Każdy program zapisany na Cyberdecku może zostać aktywowany raz na Rundę. </b>Aktywowany Program nie może być aktywowany ponownie, jeżeli wcześniej nie został deaktywowany. 
+							</p>
+							<p>
+								Na Cyberdecku można przechowywać wiele kopii tego samego Programu. Jeżeli działają jednocześnie ich efekty się kumulują, chyba że zaznaczono inaczej.
+							</p>
+							<p class="ar-section-subtitle">
+								Instalacja i deinstalacja Programu trwa godzinę.
+							</p>
+							<p >
+								<h3>Typy Programów:</h3>
+							</p>
+						</div>
+						<div class="ar-section-table-container">
+							<table>
+								<thead>
+									<tr>
+										<th class="header-cell">Typ Programu</th>
+										<th class="header-cell">Opis</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="main-cell">
+											<div>Wspierający</div>
+										</td>
+										<td class="secondary-cell">Kiedy aktywny wspiera umiejętności Postaci w sieci.</td>
+									</tr>
+									<tr>
+										<td class="main-cell">
+											<div>Obronny</div>
+										</td>
+										<td class="secondary-cell">Kiedy aktywny zatrzymuje lub redukuje ataki na Postać.</td>
+									</tr>
+									<tr>
+										<td class="main-cell">
+											<div>Ofensywny</div>
+										</td>
+										<td class="secondary-cell">Rani lub wyłącza wrogich Netrunnerów i Programy.</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="ar-section-header">
+							<h2>Tabele programów:</h2>
+							<p>
+								<b>Atak (ATK): </b> Wartość dodawana do ataku z uzyciem Programu.
+							</p>
+							<p>
+								<b>Obrona (DEF): </b> Wartość dodawana do obrony z użyciem Programu.
+							</p>
+							<p>
+								<b>REZ: </b> HP Programu, wartość obrażeń, które jest w stanie wytrzymać Program zanim nastąpi uśpienie.
+							</p>
+							<p>
+								<h3>Programy wspierające:</h3> 
+							</p>
+						</div>
+						<div class="ar-section-table-container">
+							<table>
+								<thead>
+									<tr>
+										<th class="header-cell" width="120px">Nazwa</th>
+										<th class="header-cell" width="150px">ATK / DEF / REZ</th>
+										<th class="header-cell">Efekt</th>
+										<th class="header-cell" width="100px">Koszt</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="main-cell">
+											<div>Zmywacz</div>
+										</td>
+										<td class="secondary-cell">0 / 0 / 7</td>
+										<td class="secondary-cell">Kiedy aktywny: +2 do rzutu na Cloak</td>
+										<td class="secondary-cell">20 €$</td>
+									</tr>
+									<tr>
+										<td class="main-cell">
+											<div>Żegnam</div>
+										</td>
+										<td class="secondary-cell">0 / 0 / 7</td>
+										<td class="secondary-cell">Kiedy aktywny: +2 do rzutu na Pathfinder</td>
+										<td class="secondary-cell">20 €$</td>
+									</tr>
+									<tr>
+										<td class="main-cell">
+											<div>Szybcior</div>
+										</td>
+										<td class="secondary-cell">0 / 0 / 7</td>
+										<td class="secondary-cell">Kiedy aktywny: +2 do Speed </td>
+										<td class="secondary-cell">100 €$</td>
+									</tr>
+									<tr>
+										<td class="main-cell">
+											<div>Robal</div>
+										</td>
+										<td class="secondary-cell">0 / 0 / 7</td>
+										<td class="secondary-cell">Kiedy aktywny: +2 do rzutu na Backdoor</td>
+										<td class="secondary-cell">50 €$</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="ar-section-header">
+							<p>
+								<h3>Programy obronne:</h3> 
+							</p>
+						</div>
+						<div class="ar-section-table-container">
+							<table>
+								<thead>
+									<tr>
+										<th class="header-cell" width="120px">Nazwa</th>
+										<th class="header-cell" width="150px">ATK / DEF / REZ</th>
+										<th class="header-cell">Efekt</th>
+										<th class="header-cell" width="100px">Koszt</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="main-cell">
+											<div>Pancerz</div>
+										</td>
+										<td class="secondary-cell">0 / 0 / 7</td>
+										<td class="secondary-cell">Kiedy aktywny: obniża obrażenia bezpośrednie o 4. Tylko jedna kopia tego Programu może działać w danym momencie. Użycie: 1/Netrun.</td>
+										<td class="secondary-cell">50 €$</td>
+									</tr>
+									<tr>
+										<td class="main-cell">
+											<div>Odłamki</div>
+										</td>
+										<td class="secondary-cell">0 / 0 / 7</td>
+										<td class="secondary-cell">Kiedy aktywny: redukuje ATK Programów niebędących BLACK-ICE do zera. Tylko jedna kopia tego Programu może działać w danym momencie. Użycie: 1/Netrun.</td>
+										<td class="secondary-cell">50 €$</td>
+									</tr>
+									<tr>
+										<td class="main-cell">
+											<div>Tarcza</div>
+										</td>
+										<td class="secondary-cell">0 / 0 / 7</td>
+										<td class="secondary-cell">Kiedy aktywny: zatrzymuje pierwszy udany atak Programów niebędących BLACK-ICE. Po użyciu usypia. Tylko jedna kopia tego Programu może działać w danym momencie. Użycie: 1/Netrun.</td>
+										<td class="secondary-cell">20 €$</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="ar-section-header">
+							<p>
+								<h3>Programy ofensywne:</h3> 
+							</p>
+							<p>
+								<b>AP: </b> Anty-Program <br>
+								<b>AR: </b> Anty-Runner
+							</p>
+						</div>
+						<div class="ar-section-table-container">
+							<table>
+								<thead>
+									<tr>
+										<th class="header-cell" width="120px">Nazwa</th>
+										<th class="header-cell" width="150px">ATK / DEF / REZ</th>
+										<th class="header-cell">Efekt</th>
+										<th class="header-cell" width="100px">Koszt</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="main-cell">
+											<div>Młot (AP)</div>
+										</td>
+										<td class="secondary-cell">1 / 0 / 0</td>
+										<td class="secondary-cell">Zadaje 3d6 REZ Programom nie BLACK-ICE, zadaje 2d6 REZ Programom BLACK-ICE.</td>
+										<td class="secondary-cell">50 €$</td>
+									</tr>
+									<tr>
+										<td class="main-cell">
+											<div>Sierp (AP)</div>
+										</td>
+										<td class="secondary-cell">1 / 0 / 0</td>
+										<td class="secondary-cell">Zadaje 3d6 REZ Programom BLACK-ICE, zadaje 2d6 REZ Programom nie BLACK-ICE.</td>
+										<td class="secondary-cell">50 €$</td>
+									</tr>
+									<tr>
+										<td class="main-cell">
+											<div>DeckKRASH (AR)</div>
+										</td>
+										<td class="secondary-cell">0 / 0 / 0</td>
+										<td class="secondary-cell">Cel zostaje zmuszony do opuszczenia sieci bez odłączenia się.</td>
+										<td class="secondary-cell">100 €$</td>
+									</tr>
+									<tr>
+										<td class="main-cell">
+											<div>Grom (AR)</div>
+										</td>
+										<td class="secondary-cell">2 / 0 / 0</td>
+										<td class="secondary-cell">Zadaje 2d6 obrażeń bezpośrednich celowi. Jeżeli jego Cyberdeck nie jest izolowany, Cyberdeck i ubranie zaczyna płonąć. Ogień zadaje 2 HP na koniec tury do momentu ugaszenia. Efekt się nie kumuluje.</td>
+										<td class="secondary-cell">100 €$</td>
+									</tr>
+									<tr>
+										<td class="main-cell">
+											<div>Palenie Synaps (AR)</div>
+										</td>
+										<td class="secondary-cell">0 / 0 / 0</td>
+										<td class="secondary-cell">Zmniejsza INT, REF i DEX celu o 1. Efekt nie zostawia trwałych szkód neurologicznych.</td>
+										<td class="secondary-cell">100 €$</td>
+									</tr>
+									<tr>
+										<td class="main-cell">
+											<div>Salwa (AR)</div>
+										</td>
+										<td class="secondary-cell">0 / 0 / 0</td>
+										<td class="secondary-cell">Niszczy jeden losowy Program nie BLACK-ICE z Cyberdecka celu.</td>
+										<td class="secondary-cell">100 €$</td>
+									</tr>
+									<tr>
+										<td class="main-cell">
+											<div>Kropelka (AR)</div>
+										</td>
+										<td class="secondary-cell">2 / 0 / 0</td>
+										<td class="secondary-cell">Cel nie może wniknąć głębiej w sieć ani odłączyć się z niej przez 1d6 rund (nadal może wyjść). Użycie: 1/Netrun.</td>
+										<td class="secondary-cell">100 €$</td>
+									</tr>
+									<tr>
+										<td class="main-cell">
+											<div>Popieszczenie (AR)</div>
+										</td>
+										<td class="secondary-cell">1 / 0 / 0</td>
+										<td class="secondary-cell">Zadaje celowi 1d6 obrażeń bezpośrednich i zmniejsza liczbę Akcji sieciowych o 1 (minimum 2).</td>
+										<td class="secondary-cell">100 €$</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="ar-section-header">
+							<p>
+								<h2>BLACK-ICE:</h2> 
+							</p>
+							<p>
+								<h3>Typy BLACK-ICE:</h3> 
+							</p>
+						</div>
+						<div class="ar-section-table-container">
+							<table>
+								<thead>
+									<tr>
+										<th class="header-cell">Typ BLACK-ICE</th>
+										<th class="header-cell">Opis</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="main-cell">
+											<div>Anty-Runner BLACK-ICE</div>
+										</td>
+										<td class="secondary-cell">Śmiercionośne Programy, które polują i zabijają Netrunnerów.</td>
+									</tr>
+									<tr>
+										<td class="main-cell">
+											<div>Anty-Program BLACK-ICE</div>
+										</td>
+										<td class="secondary-cell">Śmiercionośne Programy, które polują i zabijają zewnętrzne Programy.</td>
+									</tr>
+									<tr>
+										<td class="main-cell">
+											<div>Demon</div>
+										</td>
+										<td class="secondary-cell">Inteligentne systemy Black ICE, które obsługują węzły kontrolne, aby bronić swojej architektury sieciowej lub przestrzeni fizycznej, atakując Netrunnera i jego drużynę w realnym świecie. Są zbyt duże dla Cyberdecków.</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="ar-section-header">
+							<p>
+								Kiedy podczas przemierzania sieci Netrunner napotka przyczajony BLACK-ICE obie istoty dokonują rzutu <b>Poziom Interfejsu + SPEED bonus + 1d10 </b>vs. <b>BLACK-ICE SPD + 1d10</b>. Przy przegranej Netrunner lub jego losowy Program (zależne od typu BLACK-ICE) natychmiastowo doznaje efekt Programu, a następnie wkładany na początek kolejki Inicjatywy z wynikiem o jeden większym niż dotychczasowy najwyższy wynik. W każdej turze wykonuje atak za pomocą rzutu ATK + 1d10 vs. Poziom Interfejsu/DEF Programu + 1d10.
+							</p>
+							<p>
+								BLACK-ICE będzie ścigać Netrunnera po całej sieci do momentu, kiedy nie zostanie uśpiony lub kiedy Netrunner mu się wymknie. Przy udanym wymknięciu BLACK-ICE przyczaji się w miejscu, w którym widział Netrunnera ostatni raz. 
+							</p>
+							<p>
+								Netrunner może aktywować własne BLACK-ICE używając Akcji sieciowej na dwa sposoby. Poza walką może zostawić go w stanie przyczajenia. Taki BLACK-ICE będzie działał tak jak w poprzednim paragrafie. Może go aktywować w trakcie walki obierając za cel przeciwnika. Aktywowany BLACK-ICE wkładany jest na początek kolejki Inicjatywy z wynikiem o jeden większym niż dotychczasowy najwyższy wynik.
+							</p>
+							<p>
+								Aby skierować BLACK-ICE na nowy cel należy go zrestartować.
+							</p>
+							<p>
+								BLACK-ICE to nie wirtualne zwierzątko, to narzędzie mające tylko jeden jedyny cel, który został w nim zaprogramowany.
+							</p>
+							<p class="ar-section-subtitle">
+								GM rusza się wszystkimi BLACK-ICE.
+							</p>
+							<p>
+								<h2>Tabele BLACK-ICE</h2>
+							</p>
+							<p>
+								<b>Percepcja (PER): </b>Wartość wskazująca jak trudno wymknąć się Programowi BLACK-ICE.
+							</p>
+							<p>
+								<b>Speed (SPD): </b>
+							</p>
+							<p>
+								<b>Atak (ATK): </b>Wartość dodawana do ataku z uzyciem Programu.
+							</p>
+							<p>
+								<b>Obrona (DEF): </b>Wartość dodawana do obrony z użyciem Programu.
+							</p>
+							<p>
+								<b>REZ: </b>HP Programu, wartość obrażeń, które jest w stanie wytrzymać Program zanim nastąpi uśpienie.
+							</p>
+							<p>
+								<b>AP: </b> Anty-Program <br>
+								<b>AR: </b> Anty-Runner
+							</p>
+						</div>
+						<div class="ar-section-table-container">
+							<table>
+								<thead>
+									<tr>
+										<th class="header-cell" width="120px">Nazwa</th>
+										<th class="header-cell" width="150px">PER / SPD<br>ATK / DEF / REZ</th>
+										<th class="header-cell">Efekt</th>
+										<th class="header-cell" width="100px">Koszt</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="main-cell">
+											<div>Żmija (AR)</div>
+										</td>
+										<td class="secondary-cell">4 / 6<br>2 / 2 / 15</td>
+										<td class="secondary-cell">Niszczy jeden losowy Program nie BLACK-ICE z Cyberdecka celu.</td>
+										<td class="secondary-cell">100 €$</td>
+									</tr>
+									<tr>
+										<td class="main-cell">
+											<div>Gigant (AR)</div>
+										</td>
+										<td class="secondary-cell">2 / 2<br>8 / 4 / 25</td>
+										<td class="secondary-cell">Zadaje 3d6 obrażeń bezpośrednich. Cel zostaje zmuszony do opuszczenia sieci bez odłączenia się. Doznaje efektów wszystkich napotkanych i nieuśpionych BLACK-ICE z wyjątkiem Gigantów.</td>
+										<td class="secondary-cell">1000 €$</td>
+									</tr>
+									<tr>
+										<td class="main-cell">
+											<div>Ogar (AR)</div>
+										</td>
+										<td class="secondary-cell">6 / 6<br>6 / 2 / 20</td>
+										<td class="secondary-cell">Zadaje 2d6 obrażeń bezpośrednich celowi. Jeżeli jego Cyberdeck nie jest izolowany, Cyberdeck i ubranie zaczyna płonąć. Ogień zadaje 2 HP na koniec tury do momentu ugaszenia. Efekt się nie kumuluje.</td>
+										<td class="secondary-cell">500 €$</td>
+									</tr>
+									<tr>
+										<td class="main-cell">
+											<div>Kraken (AR)</div>
+										</td>
+										<td class="secondary-cell">6 / 2<br>8 / 4 / 30</td>
+										<td class="secondary-cell">Zadaje 3d6 obrażeń bezpośrednich celowi. Cel nie może wniknąć głębiej w sieć ani odłączyć się z niej do końca następnej tury (nadal może wyjść).</td>
+										<td class="secondary-cell">1000 €$</td>
+									</tr>
+									<tr>
+										<td class="main-cell">
+											<div>Licz (AR)</div>
+										</td>
+										<td class="secondary-cell">8 / 2<br>6 / 2 / 25</td>
+										<td class="secondary-cell">Zmniejsza INT, REF i DEX celu o 1. Efekt nie zostawia trwałych szkód neurologicznych.</td>
+										<td class="secondary-cell">500 €$</td>
+									</tr>
+									<tr>
+										<td class="main-cell">
+											<div>Kruk (AR)</div>
+										</td>
+										<td class="secondary-cell">6 / 4<br>4 / 2 / 15</td>
+										<td class="secondary-cell">Usypia losowy aktywny Program obronny celu. Zadaje 1d6 obrażeń bezpośrednich.</td>
+										<td class="secondary-cell">50 €$</td>
+									</tr>
+									<tr>
+										<td class="main-cell">
+											<div>Skorpion (AR)</div>
+										</td>
+										<td class="secondary-cell">2 / 6<br>2 / 2 / 15</td>
+										<td class="secondary-cell">Zmniejsza MOVE celu o 1d6 (minimum 1). Efekt nie zostawia trwałych szkód neurologicznych.</td>
+										<td class="secondary-cell">100 €$</td>
+									</tr>
+									<tr>
+										<td class="main-cell">
+											<div>Skunks (AR)</div>
+										</td>
+										<td class="secondary-cell">2 / 4<br>4 / 2 / 10</td>
+										<td class="secondary-cell">Dopóki nie zostanie uśpiony, daje -2 do wszystkich rzutów celu. Działa na jeden cel jednocześnie. W przypadku wielu Skunksów efekt może się kumulować.</td>
+										<td class="secondary-cell">500 €$</td>
+									</tr>
+									<tr>
+										<td class="main-cell">
+											<div>Błędny Ognik (AR)</div>
+										</td>
+										<td class="secondary-cell">4 / 4<br>4 / 2 / 15</td>
+										<td class="secondary-cell">Zadaje celowi 1d6 obrażeń bezpośrednich i zmniejsza liczbę Akcji sieciowych o 1 (minimum 2).</td>
+										<td class="secondary-cell">50 €$</td>
+									</tr>
+									<tr>
+										<td class="main-cell">
+											<div>Smok (AP)</div>
+										</td>
+										<td class="secondary-cell">6 / 4<br>6 / 6 / 30</td>
+										<td class="secondary-cell">Zadaje Programowi 6d6 obrażeń. Jeżeli obrażenia są większe niż REZ Programu, Program zostaje zniszczony.</td>
+										<td class="secondary-cell">1000 €$</td>
+									</tr>
+									<tr>
+										<td class="main-cell">
+											<div>Zabójca (AP)</div>
+										</td>
+										<td class="secondary-cell">4 / 8<br>6 / 2 / 20</td>
+										<td class="secondary-cell">Zadaje Programowi 4d6 obrażeń. Jeżeli obrażenia są większe niż REZ Programu, Program zostaje zniszczony.</td>
+										<td class="secondary-cell">500 €$</td>
+									</tr>
+									<tr>
+										<td class="main-cell">
+											<div>Tygrys (AP)</div>
+										</td>
+										<td class="secondary-cell">8 / 6<br>6 / 2 / 25</td>
+										<td class="secondary-cell">Zadaje Programowi 4d6 obrażeń. Jeżeli obrażenia są większe niż REZ Programu, Program zostaje zniszczony.</td>
+										<td class="secondary-cell">1000 €$</td>
 									</tr>
 								</tbody>
 							</table>
 						</div>
 					</section>
+					<div class="ar-bookmark">
+						<div class="ar-bookmark-label">
+							<span>Ulepszenia</span>
+						</div>
+					</div>
 				</div>
 
 				<!-- 
